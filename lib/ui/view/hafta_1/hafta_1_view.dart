@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/ui/view/pages/column_raw_stack_page.dart';
-import 'package:flutter_application_1/ui/view/pages/stage_management_page.dart';
+import 'package:ahmet_odev/ui/view/pages/column_raw_stack_page.dart';
+import 'package:ahmet_odev/ui/view/pages/stage_management_page.dart';
+
+import 'pages/column_raw_stack_page.dart';
+import 'pages/stage_management_page.dart';
 
 void main() {
   runApp(const Hafta1View());
@@ -40,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        Centertitle(true),
         title: Center(
           child: Text("1.Hafta"),
         )
@@ -52,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               child: Text("Row-Column-Stack Kullanımı"),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Sayfa1()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => col_row_stack_page()));
               },
             ),
             //? İki buton arasına koyduğumuz boşluk
@@ -61,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
             child: Text("State Management"),
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Sayfa2()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => stage_mana_page()));
             },
             )
           ],

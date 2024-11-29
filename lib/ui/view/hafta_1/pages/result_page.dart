@@ -1,9 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Sayfa3 extends StatelessWidget{
-  @override
+
+class result_page extends StatelessWidget{
+
   final int counterValue;
+  const result_page({Key? key, required this.counterValue}) : super(key: key);
   Widget build(BuildContext context) {
 
     return Scaffold(
