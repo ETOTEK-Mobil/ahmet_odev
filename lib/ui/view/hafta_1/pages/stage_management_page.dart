@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/ui/view/pages/result_page.dart';
 
-class Sayfa2 extends StatefulWidget {
-  const Sayfa2({super.key});
+class stage_mana_page extends StatefulWidget {
+  const stage_mana_page({super.key});
 
   @override
-  State<Sayfa2> createState() => _Sayfa2State();
+  State<stage_mana_page> createState() => _stage_mana_pageState();
 }
 
 //! AppSize Boyutlarımız.
@@ -15,7 +15,7 @@ class AppSize {
   static const double lg = 32.0; // Large spacing
 }
 
-class _Sayfa2State extends State<Sayfa2> {
+class _stage_mana_pageState extends State<stage_mana_page> {
   @override
 
   int counter = 0;
@@ -30,7 +30,7 @@ class _Sayfa2State extends State<Sayfa2> {
         body:Column(
           children: [
             Container(
-              padding: const EdgeInsets.only(top: 300.0),
+              mainAxisAlignment: MainAxisAlignment.center,
               child: Text("$counter"),
             ),
 

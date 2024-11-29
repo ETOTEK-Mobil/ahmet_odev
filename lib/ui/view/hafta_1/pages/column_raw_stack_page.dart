@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Sayfa1 extends StatelessWidget{
+class col_row_stack_page extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
@@ -15,7 +15,7 @@ class Sayfa1 extends StatelessWidget{
             children: [
               // Ekstra girdi olarak ekran boyutu almamak için 3 lü expanded yaptık en üstte 2 row var sonra sırayla column1 ve column2 var orantılı dağıtmak için de flex kullandık
               Expanded(
-                flex: 50,
+                flex: 2,
                 child:Row(
                 children: [
                   // Row1
@@ -41,7 +41,7 @@ class Sayfa1 extends StatelessWidget{
 
 
               Expanded(
-                flex: 25,
+                flex: 1,
                 child:Container(
                   color: Colors.blue,
                   alignment: Alignment.center,
@@ -50,7 +50,7 @@ class Sayfa1 extends StatelessWidget{
               ),
 
               Expanded(
-                flex:25,
+                flex:1,
                 child:Container(
                   color: Colors.yellow,
                   alignment: Alignment.center,
@@ -73,6 +73,8 @@ class Sayfa1 extends StatelessWidget{
         //         ),
         //     ),
         // ),
+
+        Center( child: Container( decoration: BoxDecoration( color: Colors.purple, shape: BoxShape.circle, ), width: 100, height: 100, child: const Center( child: Text("Stack"), ), ), ),
       ),
     );
   }
