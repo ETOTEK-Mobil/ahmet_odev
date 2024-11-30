@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:odev/core/constants/app_sizes.dart';
 import 'package:odev/ui/view/hafta_1/pages/result_page.dart';
 
 class StageManagementPage extends StatefulWidget {
@@ -6,13 +7,6 @@ class StageManagementPage extends StatefulWidget {
 
   @override
   State<StageManagementPage> createState() => _StageManagementPageState();
-}
-
-//! AppSize Boyutlarımız.
-class AppSize {
-  static const double sm = 8.0; // Small spacing
-  static const double md = 16.0; // Medium spacing
-  static const double lg = 32.0; // Large spacing
 }
 
 class _StageManagementPageState extends State<StageManagementPage> {
